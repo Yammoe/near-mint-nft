@@ -57,8 +57,8 @@ impl Contract {
             owner_id,
             NFTContractMetadata {
                 spec: NFT_METADATA_SPEC.to_string(),
-                name: "Mongomons".to_string(),
-                symbol: "MGM".to_string(),
+                name: "Degods".to_string(),
+                symbol: "DGS".to_string(),
                 icon: Some(DATA_IMAGE_SVG_NEAR_ICON.to_string()),
                 base_uri: None,
                 reference: None,
@@ -134,11 +134,11 @@ mod tests {
 
     fn sample_token_metadata() -> TokenMetadata {
         TokenMetadata {
-            title: Some("Mongomons #9812".into()),
+            title: Some("Degods #8082".into()),
             description: Some(
-                "Mongomons is a collection of exceptionally detailed creatures.".into(),
+                "A collection of degenerates, punks, and misfits. Gods of the metaverse & masters of our own universe. DeGods can be converted to DeadGods with DUST.".into(),
             ),
-            media: None,
+            media: Some("https://img-cdn.magiceden.dev/rs:fill:400:400:0:0/plain/https://metadata.degods.com/g/8081-dead.png".into()),
             media_hash: None,
             copies: Some(1u64),
             issued_at: None,
@@ -146,7 +146,7 @@ mod tests {
             starts_at: None,
             updated_at: None,
             extra: None,
-            reference: None,
+            reference: Some("https://bafybeibdijejkokuddcmxkgjmie42u2d2igefaobyh5hljzlrg4rvz3m2u.ipfs.dweb.link/1.json".into()),
             reference_hash: None,
         }
     }
